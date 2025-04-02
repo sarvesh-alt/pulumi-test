@@ -28,7 +28,7 @@ jobs:
           command: up
           stack-name: sarvesh-alt/myworkshop/dev
           work-dir: ./ppinfra
-          environment-url: https://api.pulumi.com/esc/envs/sarvesh-alt/myworkshop/oidc
+          cloud-url: https://api.pulumi.com/esc/envs/sarvesh-alt/myworkshop/oidc
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           # If you do not have Pulumi ESC configured then uncomment: 
