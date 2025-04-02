@@ -1,0 +1,19 @@
+name: Pulumi Destroy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  destroy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pulumi/actions@v4
+        with:
+          command: destroy
+          stack-name: sarvesh-alt/myworkshop/dev
+          work-dir: ./ppinfra
+          environment-url: https://api.pulumi.com/esc/envs/first-project/first-environment
+
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
