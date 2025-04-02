@@ -13,7 +13,7 @@ jobs:
           command: destroy
           stack-name: sarvesh-alt/myworkshop/dev
           work-dir: ./ppinfra
-          environment-url: https://api.pulumi.com/esc/envs/first-project/first-environment
+          environment-url: https://api.pulumi.com/esc/envs/sarvesh-alt/myworkshop/oidc
 
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
